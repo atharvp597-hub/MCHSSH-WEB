@@ -1,0 +1,45 @@
+/* ==============================
+   Footer Styles
+   ============================== */
+
+.site-footer {
+  margin-top: auto;
+  padding-block: clamp(2.5rem, 1.6rem + 2vw, 3.75rem);
+  background: linear-gradient(180deg, rgba(7, 17, 29, 0.97), rgba(11, 23, 36, 0.98));
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.site-footer__content {
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.site-footer__title {
+  color: var(--color-surface-alt);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.site-footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: inherit;
+  opacity: 0.86;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  opacity: 1;
+  color: var(--color-accent-soft);
+}
+
+.site-footer__bottom {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.68);
+  font-size: var(--text-sm);
+}
